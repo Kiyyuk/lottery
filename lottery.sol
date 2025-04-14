@@ -263,8 +263,8 @@ contract lottery is ReentrancyGuard{
     address payable[] participants;
     address private owner;
     
-    address private dev2 = 0x0A773fc7bf44d0dAFF430DBF6011d3Be39260e8F; //dev2 addres
-    address private dev = 0x0A773fc7bf44d0dAFF430DBF6011d3Be39260e8F;
+    address private dev2 = 0xae1b52ef160a904570623c4ee7f583e0fed31702; //dev2 addres
+    address private dev = 0xae1b52ef160a904570623c4ee7f583e0fed31702;
     
 uint256 private maxParticipantNumbers1;
     uint256 private participantNumbers1;
@@ -287,13 +287,13 @@ uint256 private maxParticipantNumbers1;
     constructor()  {  
         owner =  msg.sender;
         maxParticipantNumbers = 10;
-        ticketPrice = 5 ether ;
+        ticketPrice = 0.5 ether ;
 
          maxParticipantNumbers1 = 5;
-        ticketPrice1 = 10 ether;
+        ticketPrice1 = 1 ether;
 
          maxParticipantNumbers2 = 2;
-        ticketPrice2 = 50 ether;
+        ticketPrice2 = 5 ether;
 
         tokenAdress = 0x55d398326f99059fF775485246999027B3197955; 
         UsdtInterface = IERC20(tokenAdress);
